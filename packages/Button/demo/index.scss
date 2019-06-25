@@ -1,0 +1,11 @@
+.demo-block {
+  margin-bottom: 15px;
+
+  .teak-button {
+    margin-top: 15px;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}

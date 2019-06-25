@@ -1,0 +1,29 @@
+{
+  "name": "teak-ui-example",
+  "version": "0.1.0",
+  "description": "example for teak-ui",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server"
+  },
+  "author": "Chersquwn <Chersquwn@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react-router-dom": "^4.3.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.4",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "react-router-dom": "^5.0.1"
+  }
+}
