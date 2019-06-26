@@ -9,6 +9,11 @@
     "target": "es5",
     "jsx": "preserve",
     "allowSyntheticDefaultImports": true,
+    "paths": {
+      "teak-ui/*": [
+        "packages/*"
+      ]
+    }
   },
   "include": [
     "packages/**/*.ts",

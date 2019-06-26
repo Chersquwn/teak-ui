@@ -14,19 +14,46 @@ const ButtonDemo = (): FunctionComponentElement<{}> => {
         <Button type="danger">危险按钮</Button>
       </DemoBlock>
       <DemoBlock title="禁用状态">
-        <Button type="default" disabled>默认按钮</Button>
-        <Button type="primary" disabled>主题按钮</Button>
-        <Button type="inverse" disabled>反色按钮</Button>
-        <Button type="danger" disabled>危险按钮</Button>
+        <Button disabled type="default">
+          默认按钮
+        </Button>
+        <Button disabled type="primary">
+          主题按钮
+        </Button>
+        <Button disabled type="inverse">
+          反色按钮
+        </Button>
+        <Button disabled type="danger">
+          危险按钮
+        </Button>
       </DemoBlock>
       <DemoBlock title="按钮大小">
-        <Button type="primary" size="large">large按钮</Button>
-        <Button type="primary" size="normal">normal按钮</Button>
-        <Button type="primary" size="small">small按钮</Button>
+        <Button size="large" type="primary">
+          large按钮
+        </Button>
+        <Button size="normal" type="primary">
+          normal按钮
+        </Button>
+        <Button size="small" type="primary">
+          small按钮
+        </Button>
       </DemoBlock>
       <DemoBlock title="按钮形状">
-        <Button type="primary" shape="square">方形按钮</Button>
-        <Button type="danger" shape="round">圆形按钮</Button>
+        <Button shape="square" type="primary">
+          方形按钮
+        </Button>
+        <Button shape="round" type="danger">
+          圆形按钮
+        </Button>
+      </DemoBlock>
+      <DemoBlock title="带loading的按钮">
+        <Button loading type="primary" />
+        <Button disabled loading type="primary">
+          加载中...
+        </Button>
+        <Button loading type="danger">
+          加载中...
+        </Button>
       </DemoBlock>
     </>
   )

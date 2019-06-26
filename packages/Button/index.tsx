@@ -6,6 +6,7 @@ import React, {
   ReactChildren
 } from 'react'
 import classnames from 'classnames'
+import Spin from 'teak-ui/Spin'
 
 import './index.scss'
 
@@ -19,7 +20,7 @@ export interface ButtonProps {
   type: ButtonType
   size?: ButtonSize
   shape?: ButtonShape
-  children: ReactChildren | string
+  children?: ReactChildren | string
   onClick?: MouseEventHandler
   disabled?: boolean
   className?: string
@@ -63,10 +64,6 @@ const Button = (props: ButtonProps): FunctionComponentElement<ButtonProps> => {
     className
   )
 
-  function onTouchStart(e: TouchEvent<HTMLButtonElement>) {}
-
-  function onTouchEnd(e: TouchEvent<HTMLButtonElement>) {}
-
   return (
     <button
       className={classes}
@@ -74,9 +71,8 @@ const Button = (props: ButtonProps): FunctionComponentElement<ButtonProps> => {
       style={style}
       type={nativeType}
       onClick={onClick}
-      onTouchEnd={feedback ? onTouchEnd : null}
-      onTouchStart={feedback ? onTouchStart : null}
     >
+      {loading && <Spin />}
       {typeof children === 'string' ? (
         <span className={`${classPrefix}-text`}>{children}</span>
       ) : (
