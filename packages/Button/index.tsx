@@ -1,5 +1,5 @@
 import React, {
-  FunctionComponentElement,
+  FunctionComponent,
   MouseEventHandler,
   CSSProperties,
   ReactNode,
@@ -31,7 +31,7 @@ export interface ButtonProps {
   feedback?: boolean
 }
 
-const Button = (props: ButtonProps): FunctionComponentElement<ButtonProps> => {
+const Button: FunctionComponent<ButtonProps> = (props: ButtonProps) => {
   const {
     type = 'default',
     size = 'normal',
@@ -42,9 +42,7 @@ const Button = (props: ButtonProps): FunctionComponentElement<ButtonProps> => {
     className,
     style,
     nativeType = 'button',
-    icon,
-    loading = false,
-    feedback = false
+    loading = false
   } = props
   const classPrefix = 'teak-button'
 
