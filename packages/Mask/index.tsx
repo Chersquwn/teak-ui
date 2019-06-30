@@ -15,7 +15,7 @@ const Mask = (props: MaskProps): FunctionComponentElement<MaskProps> => {
   const classPrefix = 'teak-mask'
 
   return (
-    <Fade appear in={visible} timeout={duration}>
+    <Fade in={visible} timeout={duration}>
       <div
         className={`${classPrefix}`}
         style={{ zIndex }}
