@@ -1,0 +1,40 @@
+@import "../../styles/themes/default.scss";
+
+.teak-dialog {
+  &-container {
+    width: 75vw;
+    border-radius: 4px;
+    background-color: $component-color;
+    overflow: hidden;
+  }
+
+  &-header {
+    padding: 24px 0 16px;
+    text-align: center;
+  }
+
+  &-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: $text-color;
+  }
+
+  &-body {
+    padding: 0 24px 24px;
+  }
+
+  &-message {
+    margin: 0;
+    font-size: 14px;
+    color: $text-color-light;
+    text-align: center;
+  }
+
+  &-footer {
+    border-top: 1px solid $border-color;
+  }
+
+  &-button {
+    border: 0;
+  }
+}
