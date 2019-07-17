@@ -1,0 +1,28 @@
+@import "../styles/themes/default.scss";
+
+.teak-toast {
+  position: fixed;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+
+  &-container {
+    min-width: 120px;
+    max-width: 80vw;
+    padding: 14px 20px;
+    background-color: $mask-color;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  &-message {
+    margin: 0;
+    font-size: 14px;
+    color: $text-color-inverse;
+  }
+}
