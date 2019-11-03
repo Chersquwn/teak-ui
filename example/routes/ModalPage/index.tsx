@@ -1,5 +1,5 @@
 import React, { FunctionComponentElement } from 'react'
-import DemoBlock from 'example/components/DemoBlock'
+import GroupItem from '../../components/GroupItem'
 import Button from 'teak-ui/Button'
 import Dialog from 'teak-ui/Modal/Dialog'
 
@@ -18,14 +18,14 @@ const ModalDemo = (): FunctionComponentElement<{}> => {
 
   return (
     <>
-      <DemoBlock title="提示弹窗">
+      <GroupItem title="提示弹窗">
         <Button type="default" onClick={onClickAlert}>
           提示弹窗
         </Button>
         <Button type="default" onClick={onClickAlertWithoutTitle}>
           提示弹窗（不带标题）
         </Button>
-      </DemoBlock>
+      </GroupItem>
     </>
   )
 }

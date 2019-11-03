@@ -41,7 +41,6 @@ const info = async (props: ToastInfoProps): Promise<{}> => {
 }
 
 function destroy(notication: Element): void {
-  console.log(notication)
   unmountComponentAtNode(notication)
   document.body.removeChild(notication)
 }

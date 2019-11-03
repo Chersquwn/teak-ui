@@ -1,5 +1,5 @@
 import React, { FunctionComponentElement, useState } from 'react'
-import DemoBlock from 'example/components/DemoBlock'
+import GroupItem from '../../components/GroupItem'
 import Button from 'teak-ui/Button'
 import Popup from 'teak-ui/Popup'
 
@@ -14,12 +14,12 @@ const PopupDemo = (): FunctionComponentElement<{}> => {
 
   return (
     <>
-      <DemoBlock title="基础用法">
+      <GroupItem title="基础用法">
         <Button type="default" onClick={() => setDefaultVisible(true)}>
           默认弹出
         </Button>
-      </DemoBlock>
-      <DemoBlock title="弹出位置">
+      </GroupItem>
+      <GroupItem title="弹出位置">
         <Button type="default" onClick={() => setTopVisible(true)}>
           顶部弹出
         </Button>
@@ -32,7 +32,7 @@ const PopupDemo = (): FunctionComponentElement<{}> => {
         <Button type="default" onClick={() => setRightVisible(true)}>
           右侧弹出
         </Button>
-      </DemoBlock>
+      </GroupItem>
 
       <Popup
         mask
