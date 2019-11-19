@@ -53,7 +53,7 @@ const Popup = (props: PopupProps): ReactPortal => {
 
   return createPortal(
     <Fade in={visible} timeout={duration} onExited={onClosed}>
-      <div className={classes}>
+      <div className={classes} role="popup">
         {mask && (
           <Mask
             duration={duration}

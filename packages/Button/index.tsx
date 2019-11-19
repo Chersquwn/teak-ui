@@ -66,6 +66,7 @@ const Button: FunctionComponent<ButtonProps> = (props: ButtonProps) => {
     <button
       className={classes}
       disabled={disabled}
+      role="button"
       style={style}
       type={nativeType}
       onClick={onClick}

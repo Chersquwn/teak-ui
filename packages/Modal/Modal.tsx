@@ -15,7 +15,7 @@ const Modal: FunctionComponent<ModalProps> = (props: ModalProps) => {
 
   return (
     <Popup className={`${classPrefix}`} {...restProps}>
-      <div className={`${classPrefix}-container`}>
+      <div className={`${classPrefix}-container`} role="modal">
         {header && <div className={`${classPrefix}-header`}>{header}</div>}
         {<div className={`${classPrefix}-content`}>{children}</div>}
         {footer && <div className={`${classPrefix}-footer`}>{footer}</div>}

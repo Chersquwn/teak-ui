@@ -18,6 +18,7 @@ const Mask: FunctionComponent<MaskProps> = (props: MaskProps) => {
     <Fade appear in={visible} timeout={duration}>
       <div
         className={`${classPrefix}`}
+        role="mask"
         style={{ zIndex }}
         onClick={onClick ? onClick : null}
       />

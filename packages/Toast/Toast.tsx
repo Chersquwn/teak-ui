@@ -42,7 +42,7 @@ const Toast: RefForwardingComponent<ToastHandlers, ToastProps> = (
 
   return (
     <Fade in={visible} timeout={300} onExited={onClosed}>
-      <div className={`${classPrefix}`}>
+      <div className={`${classPrefix}`} role="toast">
         <Scale in={visible} timeout={duration}>
           <div className={`${classPrefix}-container`}>
             <p className={`${classPrefix}-message`}>{message}</p>

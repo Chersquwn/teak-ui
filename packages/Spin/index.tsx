@@ -19,7 +19,7 @@ const Spin = (props: SpinProps): FunctionComponentElement<SpinProps> => {
   }
 
   return (
-    <span className={`${classPrefix}`} style={style}>
+    <span className={`${classPrefix}`} role="spin" style={style}>
       <svg className={`${classPrefix}-icon`} viewBox="25 25 50 50">
         <circle cx="50" cy="50" fill="none" r="20" />
       </svg>

@@ -68,7 +68,7 @@ const Dialog: RefForwardingComponent<DialogHandlers, DialogProps> = (
 
   return (
     <Modal visible={visible} onClosed={onClosed}>
-      <div className={`${classPrefix}-container`}>
+      <div className={`${classPrefix}-container`} role="dialog">
         <Header />
         <div className={`${classPrefix}-body`}>
           <p className={`${classPrefix}-message`}>{message}</p>
