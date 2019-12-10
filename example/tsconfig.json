@@ -5,10 +5,12 @@
     "outDir": "dist/",
     "sourceMap": true,
     "noImplicitAny": true,
+    "noImplicitThis": true,
     "module": "ESNext",
     "target": "es5",
-    "jsx": "preserve",
+    "jsx": "preserve", // use 'preserve' for pass jsx to babel-loader
     "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
     "paths": {
       "teak-ui/*": [
         "../packages/*"

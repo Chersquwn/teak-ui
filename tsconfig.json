@@ -7,7 +7,8 @@
     "noImplicitAny": true,
     "module": "ESNext",
     "target": "es5",
-    "jsx": "preserve",
+    "jsx": "react",
+    "declaration": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
       "teak-ui/*": [
