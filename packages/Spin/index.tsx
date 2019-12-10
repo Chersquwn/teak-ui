@@ -1,4 +1,4 @@
-import React, { FunctionComponentElement, ReactChildren } from 'react'
+import React, { ReactChildren, FC } from 'react'
 
 import './index.scss'
 
@@ -8,7 +8,7 @@ export interface SpinProps {
   children?: ReactChildren | string
 }
 
-const Spin = (props: SpinProps): FunctionComponentElement<SpinProps> => {
+const Spin: FC<SpinProps> = props => {
   const { size = 22, color = 'inherit', children } = props
   const style: { [key: string]: any } = { color }
   const classPrefix = 'teak-spin'

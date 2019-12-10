@@ -1,4 +1,4 @@
-import React, { ReactNode, FunctionComponent } from 'react'
+import React, { ReactNode, FC } from 'react'
 import Popup from 'teak-ui/Popup'
 
 export interface ModalProps {
@@ -9,7 +9,7 @@ export interface ModalProps {
   onClosed?: () => void
 }
 
-const Modal: FunctionComponent<ModalProps> = (props: ModalProps) => {
+const Modal: FC<ModalProps> = props => {
   const { header, footer, children, ...restProps } = props
   const classPrefix = 'teak-modal'
 

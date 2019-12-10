@@ -1,4 +1,4 @@
-import React, { ReactPortal, ReactNode } from 'react'
+import React, { ReactNode, FC } from 'react'
 import { createPortal } from 'react-dom'
 import classnames from 'classnames'
 import Mask from 'teak-ui/Mask'
@@ -6,9 +6,9 @@ import { Fade, Animation } from 'teak-ui/Animation'
 
 import './index.scss'
 
-type PositionType = 'left' | 'right' | 'center' | 'top' | 'bottom'
+export type PositionType = 'left' | 'right' | 'center' | 'top' | 'bottom'
 
-interface PopupProps {
+export interface PopupProps {
   visible: boolean
   position?: PositionType
   mask?: boolean
@@ -21,7 +21,7 @@ interface PopupProps {
   onClosed?: () => void
 }
 
-const Popup = (props: PopupProps): ReactPortal => {
+const Popup: FC<PopupProps> = props => {
   const {
     visible = false,
     position = 'center',

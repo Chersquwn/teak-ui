@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react'
+import React, { FC } from 'react'
 import { Fade } from 'teak-ui/Animation'
 
 import './index.scss'
@@ -10,7 +10,7 @@ export interface MaskProps {
   duration: number
 }
 
-const Mask: FunctionComponent<MaskProps> = (props: MaskProps) => {
+const Mask: FC<MaskProps> = props => {
   const { visible = true, onClick, zIndex = 10000, duration = 300 } = props
   const classPrefix = 'teak-mask'
 

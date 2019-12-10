@@ -1,5 +1,5 @@
 import React, {
-  FunctionComponent,
+  FC,
   MouseEventHandler,
   CSSProperties,
   ReactNode,
@@ -31,7 +31,7 @@ export interface ButtonProps {
   feedback?: boolean
 }
 
-const Button: FunctionComponent<ButtonProps> = (props: ButtonProps) => {
+const Button: FC<ButtonProps> = props => {
   const {
     type = 'default',
     size = 'normal',
